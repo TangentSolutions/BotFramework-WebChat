@@ -539,11 +539,13 @@
 /* from bot */
 
     .wc-message-from-bot {
+        display: flex;
         float: left;
-        margin-left: 8px;
+        margin-left: 55px;
     }
 
     .wc-message-from-bot .wc-message-content {
+        margin-left: 5px;
         background-color: $c_messageFromThem;
         color: $c00;
     }
@@ -558,6 +560,16 @@
 
     .wc-message-from-bot svg.wc-message-callout {
         left: -6px;
+    }
+
+    .wc-message.wc-message-from-bot:before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-image: url(../bot_avatar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: -55px;
     }
 
 /* console */
